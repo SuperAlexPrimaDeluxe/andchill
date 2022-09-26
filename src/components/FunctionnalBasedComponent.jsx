@@ -8,11 +8,19 @@ const Child = () => {
 }
 
 function FunctionnalBasedComponent(){
+
+  // Passer une fonction dans une prop via une Méthode, c'est ici !
+
+  const parentComponentHandler = ()=>{
+    console.log("HelloFromtheparentCompolol");
+  }
+
+
   return(
     <div>
     <Child />
     Componsant basé sur une fonction
-    <PropExample flag={false} data = "Youpi j'ai passé une prop data"/>
+    <PropExample parentComponentHandler={parentComponentHandler} flag={false} data = "Youpi j'ai passé une prop data"/>
     </div>
     )
 }

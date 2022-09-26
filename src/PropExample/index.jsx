@@ -1,5 +1,7 @@
 import React from "react";
 
+// LA DESTRUCTURATION SE FAIT DANS LE COMPONENTS
+
 // Une prop va être élement que je vais pouvroir réutiliser dans d'autres partie de mon projet.
 
 // LA SYNTAXE PATENTHESE TOUT COLLE DE ***** IMPORTE SINON L'EXPORT DE LA PROPS DANS UN COMPOSANT FOIRE
@@ -11,7 +13,7 @@ const PropExample = (props)=>{
 // VOIR AVEC LE FONCTIONNALBASEDCOMP POUR EXAMPLE
   
   // Je redéclare les paramètres envoyés dans une props
-  const {flag, data} = props;
+  const {flag, data, parentComponentHandler} = props;
 
   return(
     <div>
@@ -20,6 +22,7 @@ const PropExample = (props)=>{
         // flag && data - Si flag est vrai alors affiche 
         flag ? data : 'flag est en faux' //Si flag en faux alors affiche comme quoi c'est le cas !
       }
+      <button onClick={parentComponentHandler}>Click</button>
       Example de prop
     </div>
   )
