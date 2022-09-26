@@ -1,4 +1,5 @@
 import React from "react";
+import PropExample from "../PropExample";
 
 const Child = () => {
   return (
@@ -11,6 +12,7 @@ function FunctionnalBasedComponent(){
     <div>
     <Child />
     Componsant basé sur une fonction
+    <PropExample flag={false} data = "Youpi j'ai passé une prop data"/>
     </div>
     )
 }
