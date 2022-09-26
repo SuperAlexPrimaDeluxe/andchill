@@ -1,0 +1,2 @@
+1) Installer react via la ligne de commande pour initialiser son dossier
+2) le fichier app et index.js vont centraliser tout les composant qui seront appeler dans la suite via des pages html et des imports.
